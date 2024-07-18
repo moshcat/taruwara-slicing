@@ -3,9 +3,12 @@
 </script>
 
 <template>
-  $END$
+<div>
+  <h1>hi anjay</h1>
+</div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+
 
 </style>

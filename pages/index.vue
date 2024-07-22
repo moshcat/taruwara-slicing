@@ -5,7 +5,6 @@
 <template>
 <div>
   <UiNavbar/>
-  <h1>hi anjay</h1>
 </div>
 </template>
 

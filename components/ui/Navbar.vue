@@ -24,9 +24,9 @@
           <button type="button" class="btn-close navbar__toggler" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-          <ul class="navbar-nav navbar__nav justify-content-end flex-grow-1 pe-3 gap-2">
-            <li class="nav-item navbar__item navbar__item--active ">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+          <ul class="navbar-nav navbar__nav justify-content-end flex-grow-1 ">
+            <li class="nav-item navbar__item  ">
+              <a class="nav-link navbar__link navbar__link--active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item navbar__item ">
               <a class="nav-link navbar__link" href="#">About Us</a>
@@ -37,8 +37,21 @@
             </li>
             <li class="nav-item navbar__item ">
               <a class="nav-link navbar__link" href="#">blog</a>
-            </li><li class="nav-item navbar__item ">
+            </li>
+            <li class="nav-item navbar__item ">
               <a class="nav-link navbar__link" href="#">contact</a>
+            </li>
+          </ul>
+          <ul class=" navbar-nav navbar__nav language-switcher-desktop">
+            <li class="dropdown navbar__item nav-item">
+              <a class=" dropdown-toggle bg-primary nav-link navbar__link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="~assets/images/icon/united-kingdom.png" alt="English">
+              </a>
+              <ul class="dropdown-menu">
+                <li class="navbar__item nav-item lang-item"><a class="dropdown-item" href="#">
+                  <img src="~assets/images/icon/indonesia.png" alt="Indonesia">
+                </a></li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -50,68 +63,114 @@
 
 <style scoped lang="scss">
 
+* {
+  //border: 1px solid red;
+}
 .navbar {
-  background-color: #ffffff;
+  padding: 0;
 
   .container-fluid {
     padding-right: 60px;
     padding-left: 60px;
+
   }
 
-  .btn-close{
-  font-size: 24px;
-  }
-
-
-
-  &__image-container{
-    padding: 0 0;
-    margin-right: 0;
+  &__image-container {
     max-width: 140px;
+    object-fit: contain;
+
   }
 
+  .preschool-menu {
+    position: relative;
+    margin-right: 20px;
 
-  &__nav {
-    align-items: center;
-
-    > .navbar__item {
-      height: 100%;
-
-      > .navbar-link {
-        height: 100%;
-        display: inline-flex;
-        align-items: center;
+    .navbar__link:hover{
+      &::before{
+        transform: translateY(-55%) rotate(45deg);
       }
     }
   }
 
-  &__link{
-    font-weight: normal;
-    font-size: 16px;
-    letter-spacing: 0.05rem;
-    text-transform: uppercase;
-    line-height: 21.82px;
-    color: $dark;
 
-    &::after {
-      display: none;
+
+  .language-switcher-desktop{
+    .dropdown-menu{
+      min-width: unset;
+      box-shadow: gray;
     }
 
-    &:hover {
-      color: $primary;
-      border-bottom: 2px solid $primary;
+
+
+    .lang-item {
+      img {
+        width: 24px;
+        height: 24px;
+      }
     }
 
-    &--active {
-      color: $primary !important;
-      border-bottom: 2px solid $primary;
+    .navbar__link {
+      padding-right: 0;
+      border-bottom: none;
+
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+
+    }
+    .navbar__link::after{
+      opacity: 0;
     }
   }
+
+
+
+  &__nav {
+    position: relative;
+    justify-content: space-between;
+  }
+  &__item {
+    height: 100%;
+
+
+
+
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-size: 10px;
+    position: relative;
+    transition: width 1s;
+    letter-spacing: 0.05em;
+    padding: 2.6041666667vw 1.0416666667vw;
+    display: inline-flex;
+
+
+    &::after {
+      content: "";
+      opacity: 0;
+      transition: all 0.2s;
+      position: absolute;
+      background-color: $primary;
+      height: 1px;
+      width: 100%;
+      left: 0;
+      bottom: -8px;
+    }
+    &:hover::after, &--active::after{
+      opacity: 1;
+    }
+    &:hover {
+      color: $primary;
+    }
+    &--active{
+      color: $primary;
+    }
+  }
+
+
 }
-
-
-
-
-
-
 </style>

@@ -93,8 +93,6 @@
     }
   }
 
-
-
   .language-switcher-desktop{
     .dropdown-menu{
       min-width: unset;
@@ -110,8 +108,8 @@
     }
 
     .navbar__link {
-      //padding-right: 0;
-      //border-bottom: none;
+      padding-right: 0;
+      border-bottom: none;
 
       img {
         width: 24px;

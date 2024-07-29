@@ -7,7 +7,7 @@
   <nav class="navbar navbar-expand-lg fixed-top border-bottom ">
     <div class="container-fluid">
       <a class="navbar-brand navbar__image-container" href="#" >
-        <img src="~assets/images/cropped-taruwara-logo.webp" class="navbar__image w-100" alt="Taruwara"  loading="eager" decoding="async">
+        <img src="../../assets/images/cropped-taruwara-logo.webp" class="navbar__image w-100" alt="Taruwara" loading="eager" decoding="async">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,7 +19,7 @@
       <div class="offcanvas offcanvas-start justify-content-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header ">
           <a class="navbar-brand navbar__image-container" href="#">
-            <img src="~assets/images/cropped-taruwara-logo.webp" alt="">
+            <img src="../../assets/images/cropped-taruwara-logo.webp" alt="">
           </a>
           <button type="button" class="btn-close navbar__toggler" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -45,12 +45,12 @@
           <ul class=" navbar-nav navbar__nav language-switcher-desktop">
             <li class="dropdown navbar__item nav-item">
               <a class=" dropdown-toggle nav-link navbar__link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="~assets/images/icon/united-kingdom.png" alt="English">
+                <img src="../../assets/images/icon/united-kingdom.png" alt="English">
               </a>
               <ul class="dropdown-menu">
                 <li class="navbar__item nav-item lang-item">
                   <a class="dropdown-item p-1" href="#">
-                  <img src="~assets/images/icon/indonesia.png" alt="Indonesia">
+                  <img src="../../assets/images/icon/indonesia.png" alt="Indonesia">
                 </a></li>
               </ul>
             </li>

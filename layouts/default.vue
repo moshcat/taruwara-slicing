@@ -1,16 +1,14 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
-<div>
-  <LayoutNavbar/>
   <div>
-    <slot/>
+    <!--    <LayoutNavbar />-->
+    <div>
+      <slot />
+    </div>
+    <!-- ini untuk footer -->
+    <LayoutFooter />
   </div>
-<!-- ini untuk footer -->
-</div>
 </template>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

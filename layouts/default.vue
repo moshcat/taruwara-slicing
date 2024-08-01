@@ -7,7 +7,7 @@
       <slot />
     </div>
     <!-- ini untuk footer -->
-    <LayoutFooter />
+    <!--    <LayoutFooter />-->
   </div>
 </template>
 

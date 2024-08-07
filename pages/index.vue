@@ -2,7 +2,8 @@
 
 <template>
   <div>
-    <main class="home">
+    <PagesHomeBanner/>
+    <!-- <main class="home">
       <section class="overview">
         <div class="container">
           <div class="row">
@@ -39,7 +40,8 @@
           </div>
         </div>
       </section>
-    </main>
+    </main> -->
+
   </div>
 </template>
 

@@ -132,7 +132,7 @@
 
   &__title {
     margin-top: 20px;
-    font-size: 32px;
+    font-size: 24px;
   }
 
   // info

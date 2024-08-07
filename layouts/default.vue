@@ -2,12 +2,12 @@
 
 <template>
   <div>
-    <!--    <LayoutNavbar />-->
+        <LayoutNavbar />
     <div>
       <slot />
     </div>
     <!-- ini untuk footer -->
-    <!--    <LayoutFooter />-->
+       <!-- <LayoutFooter /> -->
   </div>
 </template>
 

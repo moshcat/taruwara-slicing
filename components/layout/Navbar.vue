@@ -69,6 +69,7 @@
 }
 .navbar {
   padding: 0;
+  background-color: #fafafa;
 
   .container-fluid {
     padding-right: 60px;
